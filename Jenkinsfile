@@ -49,7 +49,7 @@ pipeline {
 					${SONAR_SCANNER_HOME}/bin/sonar-scanner \
   					-Dsonar.projectKey=jenkinsazure \
   					-Dsonar.sources=. \
-  					-Dsonar.host.url=http://172.18.0.3:9000 \
+  					-Dsonar.host.url=http://sonarqube-dind:9000 \
        					-Dsonar.java.binaries=target/classes \
   					-Dsonar.token=$sonarToken
    				'''
